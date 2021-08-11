@@ -52,7 +52,7 @@ module.exports = function() {
     // Monitores
 
     // Busqueda monitor
-    router.post('/monitores/busqueda/:query', auth, monitorController.buscarMonitor);
+    router.post('/monitores/busqueda/:query', monitorController.buscarMonitor);
 
     router.post('/monitores', 
     auth, 
@@ -92,7 +92,7 @@ module.exports = function() {
     router.delete('/cpus/:idCPU', auth, cpuController.eliminarCPU);
 
     // Busqueda de CPUs
-    router.post('/cpus/busqueda/:query', auth, cpuController.buscarCPU);
+    router.post('/cpus/busqueda/:query', cpuController.buscarCPU);
 
     // NoBreaks
     router.post('/nobreaks', 
@@ -114,7 +114,7 @@ module.exports = function() {
     router.delete('/nobreaks/:idNoBreak', auth, nobreakController.eliminarNoBreak);
 
     // Busqueda de NoBreaks
-    router.post('/nobreaks/busqueda/:query', auth, nobreakController.buscarNoBreak);
+    router.post('/nobreaks/busqueda/:query', nobreakController.buscarNoBreak);
 
     // Portatiles
     router.post('/portatiles', 
@@ -136,7 +136,7 @@ module.exports = function() {
     router.delete('/portatiles/:idPortatil', auth, portatilController.eliminarPortatil);
 
     // Busqueda de Portatiles
-    router.post('/portatiles/busqueda/:query', auth, portatilController.buscarPortatil);
+    router.post('/portatiles/busqueda/:query', portatilController.buscarPortatil);
 
     // Resguardos
     router.post('/resguardos', auth, resguardoController.nuevoResguardo);
