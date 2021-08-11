@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "develop": "nodemon './index.js",
-    "start": "node './index.js"
+    "start": "node index.js"
   },
   "author": "Arturo Coral",
   "license": "ISC",
